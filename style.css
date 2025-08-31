@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  background: radial-gradient(circle, #111, #000);
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(0, 255, 204, 0.5);
+  z-index: 10;
+  display: none;
+  max-width: 300px;
+}
+
+#overlay h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+#overlay p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+#overlay #highScoreText {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+#restartButton {
+  background: #00ffcc;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+#restartButton:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+}
