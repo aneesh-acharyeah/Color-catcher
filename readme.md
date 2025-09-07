@@ -1,5 +1,5 @@
 # 🎨 Color Catcher
-
+ 
 A fast-paced reflex arcade game where you must **catch only the blocks that match your paddle’s color**! Built with HTML5 Canvas and JavaScript.
 
 ---
